@@ -1,0 +1,8 @@
+Endpoint -> It's an end of a communication channel. In a normal URL we call it path, just like in my-website.com/delete-user, the "delete-user" is the endpoint/path
+
+The most commons:
+
+GET - Get an information
+POST - Create something new
+PUT - Update an information/data
+DELETE - Delete that something
