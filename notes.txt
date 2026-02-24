@@ -15,3 +15,16 @@ It'll be used two types of parameters: Path parameter and Query parameter
 my-website.com/get-user -> The path parameter is the get-user. Here, we need to put the parameter directly on the URL with {user_id}
 google.com/results?search=Python -> The query parameter is the "search=Python", we're giving a key and a value
 
+Request body and POST method
+
+Request Body, from pydantic, can be thought as a template or schema for the data my API expects to store.
+It defines fields, types and optional defaults.
+When I send an input or want to save data, it gets checked and see if it matches to the structure, then it's converted to Python objects or JSON.
+Summarizing: It's just a model to follow for making it easier to save.
+
+"
+def create_student(student_id: int, student : Student)
+# student_id behaves like header/path input; student behaves like body
+"
+
+To Update safely, without overriding past values, just save the original object on a temporary, clean the unchanged values and pass the changed ones to the stored object and return it
