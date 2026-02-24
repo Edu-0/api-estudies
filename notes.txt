@@ -6,3 +6,12 @@ GET - Get an information
 POST - Create something new
 PUT - Update an information/data
 DELETE - Delete that something
+
+uvicorn myapi:app --reload
+It's the basic command line to run the FastAPI project for the server
+
+It'll be used two types of parameters: Path parameter and Query parameter
+
+my-website.com/get-user -> The path parameter is the get-user. Here, we need to put the parameter directly on the URL with {user_id}
+google.com/results?search=Python -> The query parameter is the "search=Python", we're giving a key and a value
+
